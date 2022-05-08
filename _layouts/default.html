@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	{% seo %}
+	<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+	<link rel="apple-touch-icon" href="/icon.png">
+</head>
+<body>
+	<header itemscope itemtype="http://schema.org/Person">
+		<img class="logo" itemprop="image" src="{{ site.logo }}?s=250" srcset="{{ site.logo }}?s=500 2x"
+			alt="Profile photo of {{ site.author.name }}">
+		<h1 itemprop="name">
+			<span itemprop="givenName">Gareth</span>
+			<span itemprop="familyName">Flowers</span>
+		</h1>
+		<h2 itemprop="jobTitle">Developer</h2>
+		<div>
+			<a href="{{ site.url }}" itemprop="url">garethflowers.dev</a>
+		</div>
+		<nav>
+			<a href="{{ site.social.links[0] }}">
+				<img src="/assets/images/github.svg" alt="GitHub"></a>
+			<a href="{{ site.social.links[1] }}">
+				<img src="/assets/images/twitter.svg" alt="Twitter"></a>
+		</nav>
+	</header>
+	<main>
+		{{ content }}
+	</main>
+</body>
+</html>

@@ -1,0 +1,122 @@
+:root {
+	--base-large: calc(var(--base) * 2);
+	--base-small: calc(var(--base) / 2);
+	--base: 1rem;
+	--color-bg-alt: rgb(245, 245, 245);
+	--color-bg-light: rgb(255, 255, 255);
+	--color-bg: rgb(250, 250, 250);
+	--color-border: rgb(200, 200, 200);
+	--color-link-hover: rgb(41, 82, 123);
+	--color-link: rgb(51, 102, 153);
+	--color-text: rgb(51, 51, 51);
+	--font: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"
+}
+
+body {
+	background-color: var(--color-bg);
+	background-attachment: fixed;
+	color: var(--color-text);
+	display: grid;
+	font-family: var(--font);
+	font-display: swap;
+	gap: var(--base	);
+	grid-template-columns: 40% 60%;
+	line-height: 2;
+	margin: 0 auto;
+	max-width: 980px;
+	padding: calc(var(--base) * 4);
+}
+
+a {
+	color: var(--color-link);
+	text-decoration: underline;
+}
+
+a:hover {
+	color: var(--color-link-hover);
+	text-decoration: none;
+}
+
+header {
+	align-items: center;
+	align-self: flex-start;
+	display: flex;
+	flex-direction: column;
+	font-family: var(--font);
+	line-height: 1;
+	position: sticky;
+	text-align: center;
+	top: calc(var(--base) * 4);
+}
+
+header div {
+	height: var(--base-large);
+	margin: var(--base-small);
+	max-width: 100%;
+}
+
+header h1 {
+	font-size: var(--base-large);
+	font-weight: 100;
+	margin: calc(var(--base)) 0;
+}
+
+header h2 {
+	font-size: 1.2rem;
+	font-weight: 100;
+	margin: 0;
+}
+
+header nav img {
+	height: var(--base-large);
+	padding: var(--base-small);
+}
+
+header .logo {
+	border-radius: 10%;
+	box-shadow: 0 0 var(--base-large) rgb(153, 153, 153);
+	margin: var(--base);
+	max-height: calc(var(--base) * 12);
+	max-width: calc(var(--base) * 12);
+}
+
+header .job img {
+	height: calc(var(--base) * 1.5);
+	padding: var(--base-small);
+}
+
+header .job {
+	align-items: center;
+	display: flex;
+	height: var(--base-large);
+	padding: var(--base-small);
+}
+
+h1 {
+	font-size: calc(var(--base) * 1.5);
+	font-weight: 300;
+	margin: 0;
+}
+
+p {
+	margin: 0 0 0 var(--base-large);
+}
+
+@media screen and (max-width: 640px) {
+	body {
+		align-items: center;
+		display: flex;
+		flex-direction: column;
+		padding: var(--base);
+	}
+
+	header {
+		align-self: unset;
+		top: unset;
+		position: unset;
+	}
+
+	header .logo {
+		margin: calc(var(--base-large) * 2);
+	}
+}
