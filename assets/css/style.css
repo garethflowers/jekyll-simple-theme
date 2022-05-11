@@ -21,11 +21,15 @@ body {
 	font-family: var(--font);
 	font-display: swap;
 	gap: var(--padding);
-	grid-template-columns: min-content 1fr;
+	grid-template-columns: min-content auto;
 	line-height: 2;
 	margin: 0 auto;
 	max-width: 980px;
 	padding: var(--padding);
+}
+
+body > * {
+	overflow: hidden;
 }
 
 a {
