@@ -98,10 +98,6 @@ h1 {
 	margin: 0;
 }
 
-p {
-	margin: 0 0 0 var(--base-large);
-}
-
 @media screen and (max-width: 640px) {
 	body {
 		align-items: center;
