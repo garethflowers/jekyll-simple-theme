@@ -79,7 +79,7 @@ header nav img {
 
 header .logo {
 	border-radius: 10%;
-	box-shadow: 0 0 var(--base-large) rgb(153, 153, 153);
+	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
 	margin: var(--base);
 	max-height: calc(var(--base) * 12);
 	max-width: calc(var(--base) * 12);
