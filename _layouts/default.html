@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
+<html lang="{{ site.lang | default: "en-GB" }}">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,23 +10,34 @@
 <body>
 	<header itemscope itemtype="http://schema.org/Person">
 		<img class="logo" itemprop="image" src="{{ site.github.owner_gravatar_url }}?s=250" srcset="{{ site.github.owner_gravatar_url }}?s=500 2x"
-			alt="Profile photo of Gareth Flowers.">
+			alt="Profile photo of {{ site.github.owner_name }}.">
 		<h1 itemprop="name">
 			<span itemprop="givenName">Gareth</span>
 			<span itemprop="familyName">Flowers</span>
 		</h1>
 		<h2 itemprop="jobTitle">Developer</h2>
 		<div>
-			<a href="{{ site.github.pages_hostname }}" itemprop="url">{{ site.github.pages_hostname }}</a>
+			<a href="{{ site.github.owner_url }}" itemprop="url">
+				{{ site.github.pages_hostname }}
+			</a>
 		</div>
 		<nav>
 			<a href="{{ site.github.owner_url }}">
-				<img src="/assets/images/github.svg" alt="GitHub"></a>
+				<img src="/assets/images/github.svg" alt="GitHub">
+			</a>
 			<a href="https://twitter.com/{{ site.github.owner_name }}">
-				<img src="/assets/images/twitter.svg" alt="Twitter"></a>
+				<img src="/assets/images/twitter.svg" alt="Twitter">
+			</a>
 		</nav>
 	</header>
 	<main>
+	 	{% if site.show_downloads != false %}
+		<ul class="downloads">
+			<li><a href="{{ site.github.zip_url }}">Download <strong>ZIP File</strong></a></li>
+			<li><a href="{{ site.github.tar_url }}">Download <strong>TAR Ball</strong></a></li>
+			<li><a href="{{ site.github.repository_url }}">View On <strong>GitHub</strong></a></li>
+		</ul>
+		{% endif %}
 		{{ content }}
 	</main>
 </body>
