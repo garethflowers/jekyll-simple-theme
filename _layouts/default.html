@@ -6,6 +6,7 @@
 	{% seo %}
 	<link rel="stylesheet" href="{{ '/assets/css/style.css?v='' | append: site.github.build_revision | relative_url }}">
 	<link rel="apple-touch-icon" href="/icon.png">
+	<link type="text/plain" rel="author" href="/humans.txt" />
 </head>
 <body>
 	<header itemscope itemtype="http://schema.org/Person">
@@ -17,7 +18,7 @@
 		</h1>
 		<h2 itemprop="jobTitle">Software Engineer</h2>
 		<div>
-			<a href="{{ '/' | absolute_url }}" itemprop="url">
+			<a href="/" itemprop="url">
 				{{ site.url | replace_first: 'https://', '' }}
 			</a>
 		</div>

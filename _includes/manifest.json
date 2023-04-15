@@ -1,0 +1,13 @@
+{
+	"background_color": "#ffffff",
+	"display": "fullscreen",
+	"icons": [
+		{
+			"sizes": "512x512",
+			"src": "icon.png"
+		}
+	],
+	"name": "Gareth Flowers",
+	"short_name": "Gareth Flowers",
+	"theme_color": "#ffffff"
+}
