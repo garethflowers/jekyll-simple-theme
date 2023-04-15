@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	{% seo %}
-	<link rel="stylesheet" href="{{ "/assets/css/style.css?v=" | append: site.github.build_revision | relative_url }}">
+	<link rel="stylesheet" href="{{ '/assets/css/style.css?v='' | append: site.github.build_revision | relative_url }}">
 	<link rel="apple-touch-icon" href="/icon.png">
 </head>
 <body>
@@ -17,16 +17,16 @@
 		</h1>
 		<h2 itemprop="jobTitle">Software Engineer</h2>
 		<div>
-			<a href="{{ site.github.owner_url }}" itemprop="url">
-				{{ site.github.owner_url }}
+			<a href="{{ '/' | absolute_url }}" itemprop="url">
+				{{ site.github.pages_hostname }}
 			</a>
 		</div>
 		<nav>
 			<a href="{{ site.github.owner_url }}">
-				<img src="/assets/images/github.svg" alt="GitHub">
+				<img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub">
 			</a>
 			<a href="https://twitter.com/{{ site.github.owner_name }}">
-				<img src="/assets/images/twitter.svg" alt="Twitter">
+				<img src="{{ '/assets/images/twitter.svg' | relative_url }}" alt="Twitter">
 			</a>
 		</nav>
 	</header>
