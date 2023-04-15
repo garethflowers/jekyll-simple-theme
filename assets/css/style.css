@@ -77,6 +77,10 @@ header nav img {
 	padding: var(--base-small);
 }
 
+header nav a {
+	display: inline-block;
+}
+
 header .logo {
 	border-radius: 10%;
 	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
