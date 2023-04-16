@@ -4,10 +4,12 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1">
 	{% seo %}
+	<link rel="apple-touch-icon" href="{{ '/assets/icon.png' | relative_url }}">
+	<link rel="author" href="{{ '/assets/humans.txt' | relative_url }}" type="text/plain" />
+	<link rel="icon" href="{{ '/assets/favicon.ico' | relative_url }}" sizes="any" />
+	<link rel="icon" href="{{ '/assets/favicon.svg' | relative_url }}" type="image/svg+xml" />
+	<link rel="manifest" href="{{ '/assets/manifest.json' | relative_url }}" />
 	<link rel="stylesheet" href="{{ '/assets/css/style.css?v='' | append: site.github.build_revision | relative_url }}">
-	<link rel="apple-touch-icon" href="/icon.png">
-	<link rel="author" href="/humans.txt" type="text/plain" />
-	<link rel="manifest" href="/manifest.json" />
 </head>
 <body>
 	<header itemscope itemtype="http://schema.org/Person">

@@ -4,7 +4,7 @@
 	"icons": [
 		{
 			"sizes": "512x512",
-			"src": "icon.png"
+			"src": "/assets/icon.png"
 		}
 	],
 	"name": "Gareth Flowers",
