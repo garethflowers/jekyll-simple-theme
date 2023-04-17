@@ -3,3 +3,4 @@ description: My own simple theme for GitHub Pages.
 plugins:
   - jekyll-github-metadata
   - jekyll-seo-tag
+  - jekyll-sitemap

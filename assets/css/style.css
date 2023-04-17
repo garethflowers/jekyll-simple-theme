@@ -54,12 +54,6 @@ header {
 	top: var(--padding);
 }
 
-header div {
-	height: var(--base-large);
-	margin: var(--base-small);
-	max-width: 100%;
-}
-
 header h1 {
 	font-size: var(--base-large);
 	font-weight: 100;
@@ -69,7 +63,7 @@ header h1 {
 header h2 {
 	font-size: 1.2rem;
 	font-weight: 100;
-	margin: 0;
+	margin: calc(var(--base) / 4);
 }
 
 header nav img {
@@ -89,23 +83,17 @@ header .logo {
 	max-width: calc(var(--base) * 12);
 }
 
-header .job img {
-	height: calc(var(--base) * 1.5);
-	padding: var(--base-small);
-}
-
-header .job {
-	align-items: center;
+main nav .downloads, main nav .links {
 	display: flex;
-	height: var(--base-large);
-	padding: var(--base-small);
-}
-
-.downloads {
+	flex-direction: row;
+	gap: var(--base);
 	list-style: none;
-	display: flex;
-	gap: var(--base-small);
 	padding: 0;
+	justify-content: flex-end;
+}
+
+main nav .downloads img {
+	height: var(--base);
 }
 
 h1, h2, h3, h4 {
@@ -141,5 +129,17 @@ h3 {
 
 	header .logo {
 		margin: calc(var(--base-large) * 2);
+	}
+
+	main {
+		max-width: 100%;
+	}
+
+	main nav {
+		margin-bottom: calc(var(--base-large) * 2);
+	}
+
+	main nav .downloads, main nav .links {
+		justify-content: center;
 	}
 }
