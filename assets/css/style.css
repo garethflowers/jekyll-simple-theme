@@ -82,7 +82,7 @@ header nav a {
 }
 
 header .logo {
-	border-radius: 10%;
+	border-radius: 50%;
 	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
 	margin: var(--base);
 	max-height: calc(var(--base) * 12);
