@@ -54,6 +54,14 @@ header {
 	top: var(--padding);
 }
 
+header .logo {
+	border-radius: 50%;
+	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
+	margin: var(--base);
+	max-height: calc(var(--base) * 12);
+	max-width: calc(var(--base) * 12);
+}
+
 header h1 {
 	font-size: var(--base-large);
 	font-weight: 100;
@@ -66,6 +74,10 @@ header h2 {
 	margin: calc(var(--base) / 4);
 }
 
+header nav {
+	margin-top: var(--base);
+}
+
 header nav img {
 	height: var(--base-large);
 	padding: var(--base-small);
@@ -73,14 +85,6 @@ header nav img {
 
 header nav a {
 	display: inline-block;
-}
-
-header .logo {
-	border-radius: 50%;
-	box-shadow: 0 0 var(--base) rgb(153, 153, 153);
-	margin: var(--base);
-	max-height: calc(var(--base) * 12);
-	max-width: calc(var(--base) * 12);
 }
 
 main nav .downloads, main nav .links {

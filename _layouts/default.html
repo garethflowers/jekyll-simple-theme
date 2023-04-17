@@ -19,16 +19,16 @@
 				alt="Profile photo of {{ site.github.owner_name }}.">
 			</a>
 		</div>
-		<h1 itemprop="name">
+		<h1 class="name" itemprop="name">
 			<span itemprop="givenName">Gareth</span>
 			<span itemprop="familyName">Flowers</span>
 		</h1>
 		<h2 itemprop="jobTitle">Software Engineer</h2>
-		<h2>
+		<div>
 			<a href="/" itemprop="url">
 				{{ site.url | replace_first: 'https://', '' }}
 			</a>
-		</h2>
+		</div>
 		<nav>
 			<a href="{{ site.github.owner_url }}">
 				<img src="{{ '/assets/images/github.svg' | relative_url }}" alt="GitHub">
