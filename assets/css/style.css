@@ -104,7 +104,7 @@ main nav .downloads img {
 main .projects {
 	display: grid;
 	gap: var(--base);
-	grid-template-columns: repeat(auto-fit, minmax(calc(var(--base) * 18), 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(calc(var(--base) * 14), 1fr));
 }
 
 main .projects article {
@@ -166,6 +166,10 @@ h3 {
 
 	main {
 		width: 100%;
+	}
+
+	main .projects {
+		grid-template-columns: 1fr;
 	}
 
 	main nav {
