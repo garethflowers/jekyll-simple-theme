@@ -41,7 +41,11 @@
 			</a>
 		</nav>
 	</header>
-	<main>
+	{% assign main_class = '' %}
+	{% if site.github.is_project_page %}
+	{% assign main_class = 'project' %}
+	{% endif %}
+	<main class="{{ main_class }}">
 	 	{% if site.github.is_project_page %}
 		<nav>
 			<ul class="downloads">

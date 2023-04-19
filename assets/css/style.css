@@ -150,6 +150,10 @@ h3 {
 		padding: var(--base);
 	}
 
+	body:has(main.project) {
+		flex-direction: column-reverse;
+	}
+
 	header {
 		align-self: unset;
 		top: unset;
