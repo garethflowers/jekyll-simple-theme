@@ -28,6 +28,10 @@ body {
 	padding: var(--padding);
 }
 
+body > * {
+	overflow: hidden;
+}
+
 a {
 	color: var(--color-link);
 	text-decoration: underline;
