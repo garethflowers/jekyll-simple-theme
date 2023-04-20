@@ -20,17 +20,12 @@ body {
 	color: var(--color-text);
 	display: grid;
 	font-family: var(--font);
-	font-display: swap;
 	gap: calc(var(--padding) * 2);
 	grid-template-columns: min-content auto;
 	line-height: 2;
 	margin: 0 auto;
 	max-width: 980px;
 	padding: var(--padding);
-}
-
-body > * {
-	overflow: hidden;
 }
 
 a {
